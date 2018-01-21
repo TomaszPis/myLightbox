@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>obiekty</title>
+    <style type="text/css">
+      
+      *{
+        padding: 0;
+        margin: 0;
+      }
+
+      body{
+        font-family: arial;
+      }
+
+      #zdjecia{
+        width: 400px;
+        margin: 5% auto;
+        display: block;
+      }
+
+      .zdjecie, .zdjecie img{
+        width: 100%;
+      }
+
+      .zdjecie:hover{
+        cursor: pointer;
+      }
+
+      #lightbox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .9);
+       visibility: hidden;
+      }
+
+      #closeButton{
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        font-size: 50px;
+        color: #ffffff;
+        text-decoration: none;
+        transform: rotate(-45deg);
+      }
+
+      #lightboxImg{
+        position: absolute;
+        width: 60%;
+        height: auto; 
+        margin: 4% 19%;
+        display: block;
+      }
+   
+    </style>
+    
+  </head>
+  <body>
+    <div id="gallery">
+      <div id="lightbox">
+            <a href="" id="closeButton">+</a>
+            <img id="lightboxImg" />
+        </div> 
+      <div id="zdjecia">
+          <div class="zdjecie">
+            <img src="images/1.jpg"  class="zdj" alt="kategoria"  />
+          </div>
+          <div class="zdjecie">
+            <img src="images/2.jpg"  class="zdj" alt="kategoria"  />
+          </div>
+          <div class="zdjecie">
+            <img src="images/3.jpg"  class="zdj" alt="kategoria"  />
+          </div>     
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
